@@ -109,7 +109,7 @@ attributes:
     completely aligns with our own, as does its default behaviour.
 
     By referencing a separate Python source file via the `src` attribute, your
-    code is just a regular Python file your code editor will understand. Python
+    code is a regular Python file your code editor will understand. Python
     code embedded within a `<script>` tag in an HTML file won't benefit from
     the advantages code editors bring: syntax highlighting, code analysis,
     language-based contextual awareness and perhaps even an AI co-pilot.

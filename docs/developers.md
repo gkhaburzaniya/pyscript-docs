@@ -83,7 +83,7 @@ is through this environment that you contribute to PyScript.
 
 * The prompt in your terminal will change to include the name of your virtual
   environment indicating the sandbox is active. To deactivate the virtual
-  environment just type the following into your terminal:
+  environment type the following into your terminal:
 
     ```sh
     deactivate

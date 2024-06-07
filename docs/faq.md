@@ -636,7 +636,7 @@ but after the interpreter is bootstrapped.
 ```
 
 A classic use case for this event is to recreate the "starting up"
-spinner that used to be displayed when PyScript bootstrapped. Just show the
+spinner that used to be displayed when PyScript bootstrapped. Show the
 spinner first, then close it once `py:ready` is triggered!
 
 !!! warning
@@ -732,12 +732,12 @@ available in PyScript.
 
 #### Host a package
 
-Just put the package you need somewhere it can be served (like
+Put the package you need somewhere it can be served (like
 [PyScript.com](https://pyscript.com/)) and reference the URL in the
-[`packages` setting](../user-guide/configuration/#packages). So long as the
+[`packages` setting](../user-guide/configuration/#packages). Make sure the
 server at which you are hosting the package
 [allows CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-(fetching files from other domains) everything should just work.
+(fetching files from other domains).
 
 It is even possible to install such packages at runtime, as this example using
 MicroPython's [`mip` tool](https://docs.micropython.org/en/latest/reference/packages.html)
@@ -986,10 +986,10 @@ retains a reference to the anonymous function for future use.
 
     This probably feels strange! An implementation detail of how the Python
     and JavaScript worlds interact with each other is bleeding into your code
-    via `create_proxy`. Surely, if we always just need to create a proxy, a
-    more elegant solution would be to do this automatically?
+    via `create_proxy`. If we always need to create a proxy, would a
+    more elegant solution be to do this automatically?
 
-    As you'll see, this is a complicated situation with inevitable tradeoffs,
+    This is a complicated situation with inevitable tradeoffs,
     but ultimately, through the
     [`experimental_create_proxy = "auto"` flag](../user-guide/configuration/#experimental_create_proxy),
     you probably never need to use `create_proxy`. This section of
@@ -1104,7 +1104,7 @@ to use `create_proxy` with Pyodide**.
 
 #### In MicroPython
 
-The proxy situation is definitely simpler in MicroPython. It just creates
+The proxy situation is definitely simpler in MicroPython. It creates
 proxies automatically (so there is no need for a manual `create_proxy` step).
 
 This is because MicroPython doesn't (yet) have a `destroy()` method for
@@ -1112,7 +1112,7 @@ proxies, rendering the use case of `create_proxy` redundant.
 
 Accordingly, **the use of `create_proxy` in MicroPython is only needed for
 code portability purposes** between Pyodide and MicroPython. When using
-`create_proxy` in MicroPython, it's just a pass-through function and doesn't
+`create_proxy` in MicroPython, it's a pass-through function and doesn't
 actually do anything.
 
 All the examples that require `create_proxy` in Pyodide, don't need it in
@@ -1121,16 +1121,16 @@ MicroPython:
 ```python title="Different MicroPython create_proxy contexts."
 from pyscript import window
 
-# This just works.
+# This works.
 window.setTimeout(print, 100, "print")
 
-# This also just works.
+# This also works.
 window.setTimeout(lambda x: print(x), 100, "lambda")
 
 def print_type(event):
     print(event.type)
 
-# This just works too.
+# This works too.
 window.addEventListener(
   "some:event",
   print_type,
@@ -1214,7 +1214,7 @@ js.callback(
     [recent change in Pyodide](https://github.com/pyodide/pyodide/pull/4576),
     such `Map` instances are
     [duck-typed](https://en.wikipedia.org/wiki/Duck_typing) to behave like
-    object literals. Conversion may not be needed anymore, and `to_js` may just
+    object literals. Conversion may not be needed anymore, and `to_js` may
     work without the need of the `dict_converter`. Please check.
 
 MicroPython's version of `to_js` takes the opposite approach (for

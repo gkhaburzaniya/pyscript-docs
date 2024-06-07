@@ -266,7 +266,7 @@ paragraphs.style['background-color'] = 'lightyellow'
 
 The `ElementCollection` class currently supports the following attributes:
 
-* `style`: just like in `Element`, this proxy attribute can be used to change
+* `style`: like in `Element`, this proxy attribute can be used to change
   the style of the elements in a collection by setting the proper CSS rules,
   using `style` with the same API as a dictionary.
 * `html`: changes the `html` attribute on all the elements of a collection.
@@ -316,7 +316,7 @@ We'll deal with each of the potential JavaScript related situations in turn:
 
 ### JavaScript as a global reference
 
-In this situation, you have some JavaScript code that just globally defines
+In this situation, you have some JavaScript code that globally defines
 "stuff" in the context of your web page via a `script` tag. Your HTML will
 contain something like this:
 
@@ -348,7 +348,7 @@ from pyscript import window, document
 # The window object is the global context of your web page.
 html = window.html
 
-# Just use the object "as usual"...
+# Use the object "as usual"...
 # e.g. show escaped HTML in the body: &lt;&gt;
 document.body.append(html.escape("<>"))
 ```
@@ -420,7 +420,7 @@ export { escape, unescape };
 "./wrapper.js" = "html_escaper"
 ```
 
-```python title="main.py - just import the module as usual and make use of it."
+```python title="main.py - import the module and make use of it."
 from pyscript import document
 
 # import the module either via
@@ -454,8 +454,8 @@ Here is an example project that uses this approach:
 
 ### My own JavaScript code
 
-If you have your own JavaScript work, just remember to write it as a standard
-JavaScript module. Put simply, ensure you `export` the things you need to. For
+If you have your own JavaScript work, remember to write it as a standard
+JavaScript module. Ensure you `export` the things you need to. For
 instance, in the following fragment of JavaScript, the two functions are
 exported from the module:
 
@@ -475,7 +475,7 @@ export function fibonacci(n) {
 }
 ```
 
-Next, just reference this module in the usual way in your TOML or JSON
+Next, reference this module in the usual way in your TOML or JSON
 configuration file:
 
 ```TOML title="pyscript.toml - references the code.js module so it will appear as the code module in the pyscript.js_modules namespace."
@@ -489,13 +489,13 @@ In your HTML, reference your Python script with this configuration file:
 <script type="py" src="./main.py" config="./pyscript.toml" terminal></script>
 ```
 
-Finally, just use your JavaScript module’s exported functions inside PyScript:
+Finally, use your JavaScript module’s exported functions inside PyScript:
 
-```python title="Just call your bespoke JavaScript code from Python."
+```python title="Call your bespoke JavaScript code from Python."
 from pyscript.js_modules import code
 
 
-# Just use the JS code from Python "as usual".
+# Use the JS code from Python "as usual".
 greeting = code.hello("Chris")
 print(greeting)
 result = code.fibonacci(12)

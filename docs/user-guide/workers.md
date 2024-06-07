@@ -218,8 +218,8 @@ sync.greetings()
 sync.heavy_computation = lambda: 6 * 7
 ```
 
-Save these files in a `tmp` folder, ensure [your headers](#http-headers) (just
-use `npx mini-coi ./tmp` to serve via localhost) then see the following
+Save these files in a `tmp` folder, ensure [your headers](#http-headers) 
+(use `npx mini-coi ./tmp` to serve via localhost) then see the following
 outcome in the browser's devtools. 
 
 ```

@@ -122,7 +122,7 @@ version of Pyodide as specified in the previous examples:
 ### Files
 
 The `files` option fetches arbitrary content from URLs onto the filesystem
-available to Python, and emulated by the browser. Just map a valid URL to a
+available to Python, and emulated by the browser. Map a valid URL to a
 destination filesystem path.
 
 The following JSON and TOML are equivalent:
@@ -445,7 +445,7 @@ can be confusing at the best of times and full of
 [technical "magic"](../ffi#create_proxy).
 
 This _experimental_ flag, when set to `"auto"` will cause PyScript to try to
-automatically handle such situations, and should "just work".
+automatically handle such situations.
 
 ```TOML title="Using the experimental_create_proxy flag in TOML."
 experimental_create_proxy = "auto"

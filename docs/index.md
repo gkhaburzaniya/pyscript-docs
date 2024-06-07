@@ -48,7 +48,7 @@
   <dd>That's easy! Just take a look around
   <a href="https://pyscript.com/" target="_blank">pyscript.com</a> - our
   platform for developing and hosting PyScript applications. By using
-  using this service you help to support and sustain the development and growth
+  this service you help to support and sustain the development and growth
   of the open-source PyScript project.</dd>
   <dt><strong>I want support...</strong></dt>
   <dd>

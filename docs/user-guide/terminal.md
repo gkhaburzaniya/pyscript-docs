@@ -67,7 +67,7 @@ Consider this fragment:
 <script id="my_script" type="mpy" terminal worker></script>
 ```
 
-Get a reference to the element, and just call the `process` method on
+Get a reference to the element, and call the `process` method on
 that object:
 
 ```JS
@@ -185,4 +185,4 @@ web workers, with the following caveats:
 
 We encourage the usage of `worker` attribute to bootstrap a MicroPython
 terminal. But now you have an option to run the terminal in the main thread.
-Just remember not to block!
+Remember not to block!

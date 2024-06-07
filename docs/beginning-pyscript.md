@@ -242,7 +242,7 @@ account and change it to your satisfaction?
 
 ### From a web server
 
-Just host the three files (`pyscript.json`, `index.html`
+Host the three files (`pyscript.json`, `index.html`
 and `main.py`) in the same directory on a static web server somewhere.
 
 Clearly, we recommend you use [pyscript.com](https://pyscript.com) for this, but any
@@ -265,7 +265,7 @@ Congratulations!
 You have just created your first PyScript app. We've explored the core concepts
 needed to build yet more interesting things of your own.
 
-PyScript is extremely powerful, and these beginner steps only just scratch the
+PyScript is extremely powerful, and these beginner steps only scratch the
 surface. To learn about PyScript in more depth, check out
 [our user guide](user-guide/index.md) or
 [explore our example applications](../examples).

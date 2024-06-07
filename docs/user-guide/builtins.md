@@ -665,5 +665,5 @@ enable this behaviour.
     manipulation of the attribute's value could have resulted in the evaluation
     of arbitrary code.
 
-    This is why we changed to the current behaviour: just supply the name
+    This is why we changed to the current behaviour: supply the name
     of the Python function to be evaluated, and PyScript will do this safely.
