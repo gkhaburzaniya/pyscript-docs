@@ -64,7 +64,7 @@ equivalent values: `["hello", 1, 2, 3]`.
 
     ```
 
-    The underlying reason for this is simply JavaScript and Python do
+    The underlying reason for this is JavaScript and Python do
     instantiation very differently. By explicitly calling the JavaScript
     class's `new` method PyScript both signals and honours this difference.
 
@@ -110,7 +110,7 @@ well (for instance, `JQuery` was a source of inspiration).
 
 ### Core Concepts
 
-`Pydom` builds on topic of very few and simple core concepts:
+`Pydom` builds on top of very few core concepts:
 
 * __`Element`:__ any component that is part of a web page. This is a rough
   abstraction of an
@@ -131,7 +131,7 @@ Let's look into each of these aspects in more in detail.
 
 ### Element
 
-A PyDom `Element` is simply an abstraction of a tranditional `Element` in a web
+A PyDom `Element` is an abstraction of a tranditional `Element` in a web
 page. Every PyDom `Element` maps to an underlying JavaScript `Element` in a
 web page. These two elements are always in sync and any change of state in one
 is reflected in the other.
@@ -178,7 +178,7 @@ cases without requiring any extra work from the user.
 
 Elements have a `style` attribute to change the element style rules. The
 `style` attribute is a dictionary and, to set a style rule for the element,
-simply set the correct key on the `.style` attribute. For instance, the
+set the correct key on the `.style` attribute. For instance, the
 following code changes the background color (of the element created in the
 example above):
 
@@ -186,7 +186,7 @@ example above):
 new_p.style["background-color"] = "yellow"
 ```
 
-To remove a style key, simply use the `pop` method as you'd to to remove
+To remove a style key, use the `pop` method as you'd to to remove
 a key from a dictionary:
 
 ```python
@@ -337,7 +337,7 @@ web page.
 </script>
 ```
 
-When you find yourself in this situation, simply use the `window` object in
+When you find yourself in this situation, use the `window` object in
 your Python code (found in the `pyscript` namespace) to interact with the
 resulting JavaScript objects:
 
@@ -461,7 +461,7 @@ exported from the module:
 
 ```js title="code.js - containing two functions exported as capabilities of the module."
 /*
-Some simple JavaScript functions for example purposes.
+Some JavaScript functions for example purposes.
 */
 
 export function hello(name) {

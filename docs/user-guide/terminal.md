@@ -100,7 +100,7 @@ very same `script.terminal`:
 
 ### Clear the terminal
 
-It's very simple to clear a PyTerminal:
+To clear a PyTerminal:
 
 ```html title="Clearing the terminal"
 <script type="mpy" terminal worker>

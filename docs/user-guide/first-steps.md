@@ -1,13 +1,11 @@
 # First steps
 
-It's simple:
+* Tell your browser to use PyScript, then,
+* Tell PyScript how to run your Python code.
 
-* tell your browser to use PyScript, then,
-* tell PyScript how to run your Python code.
+fThat's it!
 
-That's it!
-
-For the browser to use PyScript, simply add a `<script>` tag, whose `src`
+For the browser to use PyScript, add a `<script>` tag, whose `src`
 attribute references a CDN url for `pyscript.core`, to your HTML document's
 `<head>`. We encourage you to add a reference to optional PyScript related
 CSS:

@@ -856,7 +856,7 @@ with open("./page.html", "r") as source:
 It's possible to upload a file onto the virtual file system from the browser
 (`<input type="file">`), and using the DOM API.
 
-The following fragment is just one way to achieve this. It's very simple and
+The following fragment is just one way to achieve this. It
 builds on the file system examples already seen.
 
 ```html title="Upload files onto the virtual file system via the browser."
@@ -1104,7 +1104,7 @@ to use `create_proxy` with Pyodide**.
 
 #### In MicroPython
 
-The proxy situation is definitely simpler in MicroPython. It creates
+In MicroPython, it creates
 proxies automatically (so there is no need for a manual `create_proxy` step).
 
 This is because MicroPython doesn't (yet) have a `destroy()` method for
@@ -1240,4 +1240,4 @@ Python object**. For the vast majority of use cases, this is a desirable
 trade-off. But it's important to note this detachment.
 
 If you're simply passing data around, `pyscript.ffi.to_js` will fulfil your
-requirements in a simple and idiomatic manner.
+requirements in an idiomatic manner.

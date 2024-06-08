@@ -82,7 +82,7 @@ That's almost it!
 
 ## Set up your application
 
-Simply create a `./public/index.html` file that loads the local PyScript:
+Create a `./public/index.html` file that loads the local PyScript:
 
 ```html
 <!DOCTYPE html>
@@ -230,7 +230,7 @@ show that very same `Hello from PyScript` message.
 Finally, we need the ability to install Python packages from a local source
 when using Pyodide.
 
-Put simply, we use the packages bundle from
+We use the packages bundle from
 [pyodide releases](https://github.com/pyodide/pyodide/releases/tag/0.24.1).
 
 !!! warning
@@ -241,7 +241,7 @@ Put simply, we use the packages bundle from
     load packages when needed.
 
 Once downloaded and extracted (we're using version `0.24.1` in this example),
-we can simply copy the files and folders inside the `pyodide-0.24.1/pyodide/*`
+we can copy the files and folders inside the `pyodide-0.24.1/pyodide/*`
 directory into our `./public/pyodide/*` folder.
 
 Feel free to either skip or replace the content, or even directly move the

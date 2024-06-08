@@ -70,7 +70,7 @@ convert a Python `dict` to a JavaScript `object`.
 !!! Note
 
     It is still possible to specify a different `dict_converter` or use Pyodide
-    specific features while converting Python references by simply overriding
+    specific features while converting Python references by overriding
     the explicit field for `dict_converter`.
 
     However, we cannot guarantee all fields and features provided by Pyodide

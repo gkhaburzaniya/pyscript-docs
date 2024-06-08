@@ -24,21 +24,21 @@ documentation project. Material is a system that takes plaintext files
 containing documentation written in Markdown, along with static files like
 templates and themes, to build the static end result.
 
-To setup the documentation development environment simply create a new
+To set up the documentation development environment create a new
 virtual environment, then `pip install -r requirements.txt` (from in the root
 of this repository).
 
 ```sh
-# example of a simple virtual environment
+# example of a virtual environment
 # creation from the root of this project
-python -m venv .
+python3 -m venv .
 ./bin/pip install --upgrade setuptools
 ./bin/pip install -r requirements.txt
 ```
 
 ## Build
 
-Simply run `mkdocs serve` or `./bin/mkdocs serve`.
+Run `mkdocs serve` or `./bin/mkdocs serve`.
 
 ## Cross-referencing
 

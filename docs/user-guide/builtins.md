@@ -229,7 +229,7 @@ returned from the server:
 
 The underlying browser `fetch` API has
 [many request options](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#supplying_request_options)
-that you should simply pass in as keyword arguments like this:
+that you should pass in as keyword arguments like this:
 
 ```python title="Supplying request options."
 from pyscript import fetch
@@ -637,7 +637,7 @@ should replace the `*` with the _actual name of an event_ (e.g. `py-click` or
 `mpy-click`). This is similar to how all
 [event handlers on elements](https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects)
 start with `on` in standard HTML (e.g. `onclick`). The rule of thumb is to
-simply replace `on` with `py-` or `mpy-` and then reference the name of a
+replace `on` with `py-` or `mpy-` and then reference the name of a
 Python function.
 
 ```html title="A py-click event on an HTML button element."

@@ -61,7 +61,7 @@ achieve the same end.
 
 ## Start working
 
-To start your code in a worker, simply ensure the `<script>`, `<py-script>` or
+To start your code in a worker, ensure the `<script>`, `<py-script>` or
 `<mpy-script>` tag pointing to the code you want to run has a `worker`
 attribute flag:
 

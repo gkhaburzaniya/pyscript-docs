@@ -333,7 +333,7 @@ There are two fields:
 Once specified, your JavaScript modules will be available under the
 `pyscript.js_modules.*` namespace.
 
-To specify such modules, simply provide a list of source/module name pairs.
+To specify such modules, provide a list of source/module name pairs.
 
 For example, to use the excellent [Leaflet](https://leafletjs.com/) JavaScript
 module for creating interactive maps you'd add the following lines:

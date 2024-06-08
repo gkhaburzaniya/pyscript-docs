@@ -83,7 +83,7 @@ Let's explore each of the three files that make this app work.
 
 This file tells PyScript and your browser about various
 [configurable aspects](../user-guide/configuration)
-of your application. Put simply, it tells PyScript what it needs in order to run
+of your application. It tells PyScript what it needs in order to run
 your application. The only thing we need to show is that we require the third
 party `arrr` module to do the
 [actual translation](https://arrr.readthedocs.io/en/latest/).
